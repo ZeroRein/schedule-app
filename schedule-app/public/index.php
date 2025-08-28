@@ -1,6 +1,6 @@
 <?php
 $host = getenv('DB_HOST') ?: 'db';
-$dbname = 'db01'; // または getenv('DB_NAME')
+$dbname = getenv('DB_NAME') ?: 'schedule_app';
 $user = getenv('DB_USER') ?: 'app';
 $pass = getenv('DB_PASS') ?: 'apppass';
 
